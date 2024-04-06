@@ -1,0 +1,30 @@
+Script started on 2024-04-06 15:12:18+03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="170" LINES="19"]
+[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1[00m$ docker image ls
+[?2004lREPOSITORY                          TAG       IMAGE ID       CREATED       SIZE
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   3 years ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   3 years ago   15.7MB
+[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1[00m$ # Alpine truly is lightweight.
+[?2004l[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1[00m$ docker exec [K[K[K[K[Krun -it -d devopsdockeruh/simple-web-service:alpine
+[?2004l5b40bc7085858e08029af2f3c0924fe73dca293ac7ccaa805c318e96ad934b12
+[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1[00m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE                                      COMMAND                 CREATED         STATUS         PORTS     NAMES
+5b40bc708585   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"   7 seconds ago   Up 7 seconds             vibrant_wu
+[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1[00m$ d exec 5[Kvibrant[K[K[K[K[K[K[K5b4 tail -f ./text.log
+[?2004ld: command not found
+[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1[00m$ d exec 5b4 tail -f ./text.log[1@o[1@c[1@k[1@e[1@r
+[?2004lSecret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-04-06 12:13:35 +0000 UTC
+2024-04-06 12:13:37 +0000 UTC
+2024-04-06 12:13:39 +0000 UTC
+2024-04-06 12:13:41 +0000 UTC
+2024-04-06 12:13:43 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-04-06 12:13:45 +0000 UTC
+2024-04-06 12:13:47 +0000 UTC
+2024-04-06 12:13:49 +0000 UTC
+2024-04-06 12:13:51 +0000 UTC
+2024-04-06 12:13:53 +0000 UTC
+^C[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1[00m$ exit
+[?2004lexit
+
+Script done on 2024-04-06 15:14:37+03:00 [COMMAND_EXIT_CODE="255"]
