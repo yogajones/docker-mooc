@@ -1,0 +1,21 @@
+Script started on 2024-04-06 16:58:14+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="170" LINES="19"]
+[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1[00m$ docker run -d -it devopsdockeruh/pull_exercise
+[?2004la3227cb007c30e9e11db525e009ce7fc659a1153dccf042434c6e0d3c8c3222d
+[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1[00m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE                          COMMAND           CREATED          STATUS          PORTS     NAMES
+a3227cb007c3   devopsdockeruh/pull_exercise   "node index.js"   13 seconds ago   Up 13 seconds             quirky_torvalds
+[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1[00m$ docker exec quirky_torvalds ls
+[?2004lDockerfile
+README.md
+index.js
+[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1[00m$ docker exec quirky_torvalds ls[K[Kcat README.md
+[?2004lThis is the readme, use input "basics" to complete this exercise.
+[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1[00m$ docker attach quirky_torvalds 
+[?2004l[1G[0JGive me the password: [23G[1G[0JGive me the password: [23Gbasics
+You found the correct password. Secret message is:
+"This is the secret message"
+
+[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1[00m$ exit
+[?2004lexit
+
+Script done on 2024-04-06 16:59:39+03:00 [COMMAND_EXIT_CODE="0"]
