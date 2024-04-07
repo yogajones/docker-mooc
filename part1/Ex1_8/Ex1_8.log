@@ -1,0 +1,18 @@
+Script started on 2024-04-07 18:23:32+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="119" LINES="18"]
+[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1/Ex1_8[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1/Ex1_8[00m$ docker image ls
+[?2004lREPOSITORY                          TAG       IMAGE ID       CREATED       SIZE
+web-server                          latest    b270552b2b2f   3 years ago   15.7MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   3 years ago   15.7MB
+[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1/Ex1_8[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1/Ex1_8[00m$ docker run web-server
+[?2004l[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+^C[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1/Ex1_8[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1/Ex1_8[00m$ exit
+[?2004lexit
+
+Script done on 2024-04-07 18:23:46+03:00 [COMMAND_EXIT_CODE="2"]
