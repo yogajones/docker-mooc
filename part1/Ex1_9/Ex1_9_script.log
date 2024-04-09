@@ -1,0 +1,12 @@
+Script started on 2024-04-09 17:26:41+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="165" LINES="17"]
+[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1/Ex1_9[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1/Ex1_9[00m$ touch text.log
+[?2004l[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1/Ex1_9[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1/Ex1_9[00m$ touch text.loggit commit -m "Ex 1.8" ; git pushadd .[Kstatus[5Pcd ..git statusls[Kscript Ex1_8.log[1Pdocker image ls[10Pclear[3Plsdocker run web-serverbuild -t web-server .[13Pimage ls[10Pcleardocker image rm simple-web-service:web-server web-server:web-server ls[Krm simple-web-service:web-server web-server:web-server [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Kdocker image lsbuild -t web-server .[7Prun web-serverls[Kcleardocker image lsscript Ex1_8.logls[Kgit status[5Pcd ..git status[1Padd .commit -m "Ex 1.8" ; git push[19Ptouch text.log[Kbash Ex!_[K[K2[K1_9.txt 
+[?2004lStarting log output
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+^C[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1/Ex1_9[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1/Ex1_9[00m$ ls
+[?2004lEx1_9_script.log  Ex1_9.txt  text.log
+[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1/Ex1_9[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1/Ex1_9[00m$ exit
+[?2004lexit
+
+Script done on 2024-04-09 17:28:18+03:00 [COMMAND_EXIT_CODE="0"]
