@@ -1,0 +1,18 @@
+Script started on 2024-04-09 17:41:58+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="165" LINES="17"]
+[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1[00m$ exit[2Plsbash Ex1_9.txt [1Ptouch text.loggit commit -m "Ex 1.8" ; git pushadd .[Kstatus[5Pcd ..git statusls[Kscript Ex1_8.log[1Pdocker image lsscript Ex1_8.logls[Kgit status[5Pcd ..git status[1Padd .commit -m "Ex 1.8" ; git push[19Ptouch text.logbash Ex1_9.txt ls[Kexit[Kdocker run -p 127.0.0.1:3002:8080 web-server
+[?2004l[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2024/04/09 - 14:43:04 | 200 |       40.19µs |      172.17.0.1 | GET      "/"
+[GIN] 2024/04/09 - 14:43:25 | 200 |       15.46µs |      172.17.0.1 | GET      "/"
+^C[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1[00m$ ""I"n" "b"r"o"w"s"e"r":" "g"o" "t"o" "[7mhttp://localhost:3002/[27m"http://localhost:3002/"
+[?2004lbash: In browser: go to http://localhost:3002/: No such file or directory
+[?2004h]0;joukos@joukos-ubuntu: ~/docker-mooc/part1[01;32mjoukos@joukos-ubuntu[00m:[01;34m~/docker-mooc/part1[00m$ exit
+[?2004lexit
+
+Script done on 2024-04-09 17:43:43+03:00 [COMMAND_EXIT_CODE="127"]
