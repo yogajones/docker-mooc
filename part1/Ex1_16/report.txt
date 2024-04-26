@@ -1,0 +1,9 @@
+1. I chose to use the BlogList App I created during and with the instructions of the Full Stack Open base course I had just completed.
+2. Created a spin-off of the BlogList App to a new GitHub repository.
+3. Added build script to project root.
+4. Created the Dockerfile.
+5. Built the image and ran it locally with env variables as parameters for the '-e' flags.
+6. Read some docs and did some googling: decided to deploy directly from Github -> Render instead of pushing the image to Docker Hub first.
+7. Pushed stuff to GitHub.
+8. Followed Render's guide to deploying an app from Dockerfile in a public GitHub repository --> surprisingly easy!
+9. Updated BlogList App's README.
