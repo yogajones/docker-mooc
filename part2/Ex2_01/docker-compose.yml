@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+
+  simple-web-service-compose:
+    image: devopsdockeruh/simple-web-service
+    build: .
+    volumes:
+      - type: bind
+        source: ./text.log
+        target: /usr/src/app/text.log
+    container_name: simple-web-service-compose
