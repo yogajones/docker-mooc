@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  db:
+    image: "postgres:latest"
+    restart: unless-stopped
+    shm_size: 128mb
+    environment:
+      POSTGRES_PASSWORD: example
+    container_name: example-postgres
+    volumes:
+      - type: bind
+        source: ./database
+        target: /var/lib/postgresql/data
+
+  redis:
+    image: "redis:latest"
+    container_name: example-redis  
+  
+  backend:
+    build:
+      context: ./example-backend
+    container_name: example-backend
+    environment:
+      PORT: 8080
+      REQUEST_ORIGIN: http://localhost:5000
+      REDIS_HOST: redis
+      POSTGRES_HOST: db
+      POSTGRES_PASSWORD: example
+    depends_on:
+      - redis
+      - db
+
+  frontend:
+    build:
+      context: ./example-frontend
+    container_name: example-frontend
+    environment:
+      REACT_APP_BACKEND_URL: http://backend:8080
+    depends_on:
+      - backend
+
+  nginx:
+    image: "nginx:latest"
+    container_name: example-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - type: bind
+        source: ./nginx.conf
+        target: /etc/nginx/nginx.conf
+    depends_on:
+      - frontend
+      - backend
+
+volumes:
+  database: 
