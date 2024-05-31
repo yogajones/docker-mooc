@@ -1,0 +1,144 @@
+info==> Cloning from https://github.com/yogajones/bloglist
+info==> Checking out commit 45153314e71bf3ad23e670d8a6f34021707f0951 in branch main
+info==> Downloading cache...
+info==> Transferred 182MB in 7s. Extraction took 1s.
+info#1 [internal] load build definition from Dockerfile
+info#1 DONE 0.0s
+info
+info#1 [internal] load build definition from Dockerfile
+info#1 transferring dockerfile: 193B done
+info#1 DONE 0.0s
+info
+info#2 [internal] load metadata for docker.io/library/node:18-alpine
+info#2 ...
+info
+info#3 [auth] library/node:pull render-prod/docker-mirror-repository/library/node:pull token for us-west1-docker.pkg.dev
+info#3 DONE 0.0s
+info
+info#2 [internal] load metadata for docker.io/library/node:18-alpine
+info#2 DONE 4.7s
+info
+info#4 [internal] load .dockerignore
+info#4 transferring context: 2B done
+info#4 DONE 0.0s
+info
+info#5 importing cache manifest from local:3453449155568082273
+info#5 inferred cache manifest type: application/vnd.oci.image.index.v1+json done
+info#5 DONE 0.0s
+info
+info#6 [1/5] FROM docker.io/library/node:18-alpine@sha256:5069da655539e2e986ce3fd1757f24a41b846958566c89ff4a48874434d73749
+info#6 resolve docker.io/library/node:18-alpine@sha256:5069da655539e2e986ce3fd1757f24a41b846958566c89ff4a48874434d73749 0.0s done
+info#6 ...
+info
+info#7 [internal] load build context
+info#7 transferring context: 411.70kB 0.0s done
+info#7 DONE 0.1s
+info
+info#6 [1/5] FROM docker.io/library/node:18-alpine@sha256:5069da655539e2e986ce3fd1757f24a41b846958566c89ff4a48874434d73749
+info#6 sha256:b8f3bd8bfe9e57370cb37c29df1eb4e97c3befd433a957b1acbfe97f6537e122 0B / 449B 0.2s
+info#6 sha256:92411982d03bcad01621c3ab2cc6079b46591377e26330241259e9463ef9b988 0B / 1.38MB 0.2s
+info#6 sha256:3cee96ef1c71eab92befc97585e5e7d1a543acd8f8dd88af9dabb186aee1f5f1 0B / 39.83MB 0.2s
+info#6 sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f 0B / 3.62MB 0.2s
+info#6 sha256:b8f3bd8bfe9e57370cb37c29df1eb4e97c3befd433a957b1acbfe97f6537e122 449B / 449B 0.9s done
+info#6 sha256:92411982d03bcad01621c3ab2cc6079b46591377e26330241259e9463ef9b988 1.38MB / 1.38MB 2.0s done
+info#6 sha256:3cee96ef1c71eab92befc97585e5e7d1a543acd8f8dd88af9dabb186aee1f5f1 9.44MB / 39.83MB 2.4s
+info#6 sha256:3cee96ef1c71eab92befc97585e5e7d1a543acd8f8dd88af9dabb186aee1f5f1 31.46MB / 39.83MB 2.6s
+info#6 sha256:3cee96ef1c71eab92befc97585e5e7d1a543acd8f8dd88af9dabb186aee1f5f1 39.83MB / 39.83MB 2.7s
+info#6 sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f 1.05MB / 3.62MB 2.7s
+info#6 sha256:3cee96ef1c71eab92befc97585e5e7d1a543acd8f8dd88af9dabb186aee1f5f1 39.83MB / 39.83MB 2.9s done
+info#6 sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f 2.10MB / 3.62MB 2.9s
+info#6 sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f 3.15MB / 3.62MB 3.0s
+info#6 sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f 3.62MB / 3.62MB 3.1s done
+info#6 extracting sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f 0.1s done
+info#6 DONE 3.3s
+info
+info#6 [1/5] FROM docker.io/library/node:18-alpine@sha256:5069da655539e2e986ce3fd1757f24a41b846958566c89ff4a48874434d73749
+info#6 extracting sha256:3cee96ef1c71eab92befc97585e5e7d1a543acd8f8dd88af9dabb186aee1f5f1
+info#6 extracting sha256:3cee96ef1c71eab92befc97585e5e7d1a543acd8f8dd88af9dabb186aee1f5f1 1.7s done
+info#6 extracting sha256:92411982d03bcad01621c3ab2cc6079b46591377e26330241259e9463ef9b988
+info#6 extracting sha256:92411982d03bcad01621c3ab2cc6079b46591377e26330241259e9463ef9b988 0.1s done
+info#6 extracting sha256:b8f3bd8bfe9e57370cb37c29df1eb4e97c3befd433a957b1acbfe97f6537e122 0.0s done
+info#6 DONE 5.2s
+info
+info#8 [2/5] WORKDIR /usr/src/app
+info#8 DONE 0.0s
+info
+info#9 [3/5] COPY . .
+info#9 DONE 0.0s
+info
+info#10 [4/5] RUN npm install && npm run build:ui
+info#10 0.536 
+info#10 0.536 > install
+info#10 0.536 > npm install --prefix backend && npm install --prefix frontend
+info#10 0.536 
+info#10 4.312 
+info#10 4.312 added 286 packages, and audited 287 packages in 4s
+info#10 4.312 
+info#10 4.312 45 packages are looking for funding
+info#10 4.312   run `npm fund` for details
+info#10 4.313 
+info#10 4.313 found 0 vulnerabilities
+info#10 10.38 
+info#10 10.38 added 476 packages, and audited 477 packages in 6s
+info#10 10.38 
+info#10 10.38 141 packages are looking for funding
+info#10 10.38   run `npm fund` for details
+info#10 10.38 
+info#10 10.38 found 0 vulnerabilities
+info#10 10.42 
+info#10 10.42 up to date, audited 1 package in 10s
+info#10 10.43 
+info#10 10.43 found 0 vulnerabilities
+notice#10 10.43 npm notice
+notice#10 10.43 npm notice New minor version of npm available! 10.7.0 -> 10.8.1
+notice#10 10.43 npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.8.1
+notice#10 10.43 npm notice To update run: npm install -g npm@10.8.1
+notice#10 10.43 npm notice
+info#10 10.59 
+info#10 10.59 > build:ui
+info#10 10.59 > cd frontend && npm run build && rm -rf ../backend/dist && mv dist ../backend/
+info#10 10.59 
+info#10 10.77 
+info#10 10.77 > bloglist-frontend@0.0.0 build
+info#10 10.77 > vite build
+info#10 10.77 
+info#10 11.15 vite v5.2.8 building for production...
+info#10 11.43 transforming...
+info#10 15.03 ✓ 1170 modules transformed.
+info#10 15.44 rendering chunks...
+info#10 15.45 computing gzip size...
+info#10 15.46 dist/index.html                  0.39 kB │ gzip:   0.27 kB
+info#10 15.46 dist/assets/index-Dx-ZxRcf.js  429.35 kB │ gzip: 139.19 kB
+info#10 15.46 ✓ built in 4.29s
+info#10 DONE 15.6s
+info
+info#11 [5/5] WORKDIR /usr/src/app/backend
+info#11 DONE 0.4s
+info
+info#12 exporting to docker image format
+info#12 exporting layers
+info#12 exporting layers 7.8s done
+info#12 exporting manifest sha256:802a985e6ff39d70f098214cdb36bd1a3d38ed42f0a439f38bb76cdb60fa5a49 0.0s done
+info#12 exporting config sha256:7c6632103a3bd601f5a8925cd2f626d37b080a5fa1cdc4734b77a81ea4e99a75 0.0s done
+info#12 DONE 9.1s
+info
+info#13 exporting cache to client directory
+info#13 preparing build cache for export
+info#13 writing cache manifest sha256:b5fdd4cdc904db51da4ba1d1ac1ffb4252e973c49e373b9187ccbcf7d8e666c2 done
+info#13 DONE 1.7s
+infoPushing image to registry...
+infoUpload succeeded
+infoDONE
+info==> Deploying...
+info==> No open ports detected, continuing to scan...
+info
+info> blogilista@0.0.1 start
+info> cross-env NODE_ENV=production node index.js
+info
+info==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
+infoconnecting to database..
+infoServer running on port 3003
+info..connected to MongoDB
+info==> Your service is live 🎉
+info==> Detected service running on port 3003
+info==> Docs on specifying a port: https://render.com/docs/web-services#port-binding

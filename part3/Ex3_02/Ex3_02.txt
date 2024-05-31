@@ -1,0 +1,3 @@
+https://github.com/yogajones/bloglist
+
+No GitHub Actions configured as I had previously implemented Render's auto-deploy for GitHub. See Render deploy log for more info.
